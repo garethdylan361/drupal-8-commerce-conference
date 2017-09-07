@@ -13,14 +13,19 @@ chart-js:
 
 dashboard-js:
   version: 1.x
+  css:
+    base:
+      'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
   js:
     'src/View/Dashboard/Dashboard.jsx': {attributes: {type: text/babel}}
+   # 'https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/<version>/react-bootstrap.min.js': {type: external}
+  dependencies:
+    - core/jquery
 
 actionbar-js:
   version: 1.x
   css:
     theme:
      'src/View/ActionBar/ActionBar.css': {}
-   js:
-     'src/View/ActionBar/ActionBar.js': {attributes: {type: text/babel}}
-
+  js:
+    'src/View/ActionBar/ActionBar.jsx': {attributes: {type: text/babel}}
