@@ -17,7 +17,7 @@ class Dashboard extends React.Component {
       <content>
         <Row>
 
-          <Col sm={3}>
+          <Col sm={5} md={4} lg={3} xl={2}>
             <Row>
               <Col sm={12}>
                 <ConferenceSideNav />
@@ -25,9 +25,9 @@ class Dashboard extends React.Component {
             </Row>
           </Col>
 
-          <Col sm={9}>
+          <Col sm={7} md={8} lg={9} xl={10}>
             <Row>
-              <Col sm={12}>git
+              <Col sm={12}>
                 <ConferenceNavBar />
               </Col>
             </Row>
