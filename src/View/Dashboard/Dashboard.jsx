@@ -4,9 +4,14 @@ class Dashboard extends React.Component {
     super(props);
   }
 
+  handleSelect(eventKey) {
+    event.preventDefault();
+    alert(`selected ${eventKey}`);
+  }
+
   render(){
     return(
-      <h1>Hello World</h1>
+      <ConferenceNavBar />
     );
   }
 

@@ -5,6 +5,7 @@ react-js:
     'https://unpkg.com/react-dom@15/dist/react-dom.min.js': { type: external }
     'https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js': { type: external }
     '//cdn.muicss.com/mui-0.9.24/js/mui.min.js': { type: external }
+    'https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.3/react-bootstrap.min.js': { type: external }
 
 chart-js:
   version: 1.x
@@ -18,14 +19,14 @@ dashboard-js:
       'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
   js:
     'src/View/Dashboard/Dashboard.jsx': {attributes: {type: text/babel}}
-   # 'https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/<version>/react-bootstrap.min.js': {type: external}
   dependencies:
     - core/jquery
+    - commerce_conference/dashboard-js.navbar
 
-actionbar-js:
+dashboard-js.navbar:
   version: 1.x
   css:
     theme:
-     'src/View/ActionBar/ActionBar.css': {}
+     'src/View/ConferenceNavBar/ConferenceNavBar.css': {}
   js:
-    'src/View/ActionBar/ActionBar.jsx': {attributes: {type: text/babel}}
+    'src/View/ConferenceNavBar/ConferenceNavBar.jsx': {attributes: {type: text/babel}}
