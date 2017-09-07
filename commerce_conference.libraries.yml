@@ -1,0 +1,26 @@
+react-js:
+  version: 1.x
+  js:
+    'https://unpkg.com/react@15/dist/react.min.js': { type: external }
+    'https://unpkg.com/react-dom@15/dist/react-dom.min.js': { type: external }
+    'https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js': { type: external }
+    '//cdn.muicss.com/mui-0.9.24/js/mui.min.js': { type: external }
+
+chart-js:
+  version: 1.x
+  js:
+    'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js': { type: external}
+
+dashboard-js:
+  version: 1.x
+  js:
+    'src/View/Dashboard/Dashboard.jsx': {attributes: {type: text/babel}}
+
+actionbar-js:
+  version: 1.x
+  css:
+    theme:
+     'src/View/ActionBar/ActionBar.css': {}
+   js:
+     'src/View/ActionBar/ActionBar.js': {attributes: {type: text/babel}}
+

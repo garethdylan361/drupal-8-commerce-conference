@@ -1,0 +1,7 @@
+commerce_conference.dashboard:
+    path: '/admin/conferences/dashboard'
+    defaults:
+        _controller: '\Drupal\commerce_conference\Controller\ConferenceDashboard::content'
+        _title: 'Conference Dashboard'
+    requirements:
+        _permission: 'access content'

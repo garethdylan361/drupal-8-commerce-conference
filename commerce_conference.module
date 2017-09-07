@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * commerce_conference.module
+ */
+
+/**
+ * Implements hook_theme
+ */
+function commerce_conference_theme(){
+  $themes = array();
+
+  $themes['commerce_conference_dashboard'] = [
+    'variables' => ['name' => NULL],
+    'template' => 'commerce_conference_dashboard'
+  ];
+
+  return $themes;
+}
+
