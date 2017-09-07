@@ -34,7 +34,7 @@ class Dashboard extends React.Component {
 
             <Row>
               <Col sm={12}>
-                Content
+                <AnalyticsContent />
               </Col>
             </Row>
 

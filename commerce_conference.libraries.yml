@@ -12,7 +12,7 @@ chart-js:
   js:
     'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js': { type: external}
 
-dashboard-js:
+dashboard:
   version: 1.x
   css:
     base:
@@ -21,10 +21,11 @@ dashboard-js:
     'src/View/Dashboard/Dashboard.jsx': {attributes: {type: text/babel}}
   dependencies:
     - core/jquery
-    - commerce_conference/dashboard-js.navbar
-    - commerce_conference/dashboard-js.sidenav
+    - commerce_conference/dashboard.navbar
+    - commerce_conference/dashboard.sidenav
+    - commerce_conference/dashboard.content.analytics
 
-dashboard-js.navbar:
+dashboard.navbar:
   version: 1.x
   css:
     theme:
@@ -32,7 +33,12 @@ dashboard-js.navbar:
   js:
     'src/View/ConferenceNavBar/ConferenceNavBar.jsx': {attributes: {type: text/babel}}
 
-dashboard-js.sidenav:
+dashboard.sidenav:
   version: 1.x
   js:
     'src/View/ConferenceSideNav/ConferenceSideNav.jsx': {attributes: {type: text/babel}}
+
+dashboard.content.analytics:
+  version: 1.x
+  js:
+    'src/View/AnalyticsContent/AnalyticsContent.jsx': {attributes: {type: text/babel}}
