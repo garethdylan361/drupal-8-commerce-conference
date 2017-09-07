@@ -28,11 +28,62 @@ class AnalyticsContent extends React.Component {
     };
 
     return (
-      <Panel header="Conference Registrations">
+      <Panel header="Conference Reports">
         <Row>
           <Col sm={12}>
-            <Line style={{width: '100%', height:'300px'}} data={chartData}/>
+
+            <Panel header="All Conference Reports" bsStyle="primary">
+              <Row>
+                <Col sm={12}>
+                  <Line style={{width: '100%', height:'300px'}} data={chartData}/>
+                </Col>
+              </Row>
+            </Panel>
+
           </Col>
+
+          <Row>
+
+            <Col sm={6}>
+              <Panel header="Seminar Reports" bsStyle="primary">
+                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+              </Panel>
+            </Col>
+
+            <Col sm={6}>
+              <Panel header="Event Reports" bsStyle="primary">
+                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+              </Panel>
+            </Col>
+
+          </Row>
+
+          <Row>
+
+            <Col sm={6}>
+              <Panel header="Day's Purchased Reports" bsStyle="primary">
+                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+              </Panel>
+            </Col>
+
+            <Col sm={6}>
+              <Panel header="Day's Attending Reports" bsStyle="primary">
+                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+              </Panel>
+            </Col>
+
+          </Row>
+
+          <Row>
+
+            <Col sm={6}>
+              <Panel header="Event Reports" bsStyle="primary">
+                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+              </Panel>
+            </Col>
+
+          </Row>
+
         </Row>
       </Panel>
     );
