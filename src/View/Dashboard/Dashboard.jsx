@@ -6,12 +6,43 @@ class Dashboard extends React.Component {
 
   handleSelect(eventKey) {
     event.preventDefault();
-    alert(`selected ${eventKey}`);
   }
 
   render(){
+
+    let Row = ReactBootstrap.Row,
+      Col = ReactBootstrap.Col;
+
     return(
-      <ConferenceNavBar />
+      <content>
+        <Row>
+
+          <Col sm={3}>
+            <Row>
+              <Col sm={12}>
+                <ConferenceSideNav />
+              </Col>
+            </Row>
+          </Col>
+
+          <Col sm={9}>
+            <Row>
+              <Col sm={12}>git
+                <ConferenceNavBar />
+              </Col>
+            </Row>
+
+            <Row>
+              <Col sm={12}>
+                Content
+              </Col>
+            </Row>
+
+          </Col>
+
+        </Row>
+
+      </content>
     );
   }
 

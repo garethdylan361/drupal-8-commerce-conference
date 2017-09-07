@@ -20,7 +20,6 @@ class ConferenceDashboard extends ControllerBase {
         'library' => array(
           'commerce_conference/react-js',
           'commerce_conference/chart-js',
-          'commerce_conference/dashboard-js.navbar',
           'commerce_conference/dashboard-js',
         ),
       ),

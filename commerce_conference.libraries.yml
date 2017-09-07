@@ -22,6 +22,7 @@ dashboard-js:
   dependencies:
     - core/jquery
     - commerce_conference/dashboard-js.navbar
+    - commerce_conference/dashboard-js.sidenav
 
 dashboard-js.navbar:
   version: 1.x
@@ -30,3 +31,8 @@ dashboard-js.navbar:
      'src/View/ConferenceNavBar/ConferenceNavBar.css': {}
   js:
     'src/View/ConferenceNavBar/ConferenceNavBar.jsx': {attributes: {type: text/babel}}
+
+dashboard-js.sidenav:
+  version: 1.x
+  js:
+    'src/View/ConferenceSideNav/ConferenceSideNav.jsx': {attributes: {type: text/babel}}
