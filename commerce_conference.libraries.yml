@@ -4,13 +4,13 @@ react-js:
     'https://unpkg.com/react@15/dist/react.min.js': { type: external }
     'https://unpkg.com/react-dom@15/dist/react-dom.min.js': { type: external }
     'https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js': { type: external }
-    '//cdn.muicss.com/mui-0.9.24/js/mui.min.js': { type: external }
     'https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.3/react-bootstrap.min.js': { type: external }
 
 chart-js:
   version: 1.x
   js:
     'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js': { type: external}
+    'https://cdnjs.cloudflare.com/ajax/libs/react-chartjs/0.8.0/react-chartjs.min.js': { type: external }
 
 dashboard:
   version: 1.x
