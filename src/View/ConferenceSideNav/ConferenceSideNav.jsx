@@ -1,4 +1,8 @@
-class ConferenceSideNav extends React.Component {
+import React from 'react';
+import Nav from 'react-bootstrap/lib/Nav';
+import NavItem from 'react-bootstrap/lib/NavItem';
+
+export default class ConferenceSideNav extends React.Component {
 
   constructor(props){
     super(props);
@@ -9,10 +13,6 @@ class ConferenceSideNav extends React.Component {
   }
 
   render(){
-
-    let Nav = ReactBootstrap.Nav,
-      NavItem = ReactBootstrap.NavItem;
-
     return(
       <Nav bsStyle="pills" stacked activeKey={1} onSelect={this.handleSelect}>
         <NavItem eventKey={1}>Conference 2017</NavItem>

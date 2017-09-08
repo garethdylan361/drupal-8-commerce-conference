@@ -1,4 +1,10 @@
-class AnalyticsContent extends React.Component {
+import React from 'react';
+import {Line, Doughnut} from 'react-chartjs-2';
+import Panel from 'react-bootstrap/lib/Panel';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
+
+export default class AnalyticsContent extends React.Component {
 
   constructor(props){
     super(props);
@@ -6,23 +12,26 @@ class AnalyticsContent extends React.Component {
 
   render(){
 
-    let Line = window['react-chartjs'].Line,
-      Panel = ReactBootstrap.Panel,
-      Col = ReactBootstrap.Col,
-      Row = ReactBootstrap.Row;
-
     const chartData = {
       labels: ["Conference 2011", "Conference 2012", "Conference 2013", "Conference 2014", "Conference 2015",
         "Conference 2016", "Conference 2017",],
       datasets: [
         {
-          label: "My First dataset",
           fill: false,
           pointHoverRadius: 5,
           pointRadius: 1,
           pointHitRadius: 10,
           data: [200, 210, 190, 160, 180, 230, 221],
           spanGaps: false,
+        }
+      ]
+    };
+
+    const merchandiseReports = {
+      labels: ["T-Shirts", "Drink Tickets", "Hats"],
+      datasets: [
+        {
+          data: [50, 100, 20],
         }
       ]
     };
@@ -38,6 +47,11 @@ class AnalyticsContent extends React.Component {
                   <Line style={{width: '100%', height:'300px'}} data={chartData}/>
                 </Col>
               </Row>
+              <Row>
+                <Col sm={12}>
+                  <a href="#">Export</a>
+                </Col>
+              </Row>
             </Panel>
 
           </Col>
@@ -46,13 +60,31 @@ class AnalyticsContent extends React.Component {
 
             <Col sm={6}>
               <Panel header="Seminar Reports" bsStyle="primary">
-                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                <Row>
+                  <Col sm={12}>
+                    <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm={12}>
+                    <a href="#">Export</a>
+                  </Col>
+                </Row>
               </Panel>
             </Col>
 
             <Col sm={6}>
               <Panel header="Event Reports" bsStyle="primary">
-                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                <Row>
+                  <Col sm={12}>
+                    <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm={12}>
+                    <a href="#">Export</a>
+                  </Col>
+                </Row>
               </Panel>
             </Col>
 
@@ -62,13 +94,31 @@ class AnalyticsContent extends React.Component {
 
             <Col sm={6}>
               <Panel header="Day's Purchased Reports" bsStyle="primary">
-                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                <Row>
+                  <Col sm={12}>
+                    <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm={12}>
+                    <a href="#">Export</a>
+                  </Col>
+                </Row>
               </Panel>
             </Col>
 
             <Col sm={6}>
               <Panel header="Day's Attending Reports" bsStyle="primary">
-                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                <Row>
+                  <Col sm={12}>
+                    <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm={12}>
+                    <a href="#">Export</a>
+                  </Col>
+                </Row>
               </Panel>
             </Col>
 
@@ -78,7 +128,31 @@ class AnalyticsContent extends React.Component {
 
             <Col sm={6}>
               <Panel header="Event Reports" bsStyle="primary">
-                <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                <Row>
+                  <Col sm={12}>
+                    <Line style={{width: '100%', height:'200px'}} data={chartData}/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm={12}>
+                    <a href="#">Export</a>
+                  </Col>
+                </Row>
+              </Panel>
+            </Col>
+
+            <Col sm={6}>
+              <Panel header="Conference Merchandise Sales Reports" bsStyle="primary">
+                <Row>
+                  <Col sm={12}>
+                    <Doughnut style={{width: '100%', height:'200px'}} data={merchandiseReports}/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm={12}>
+                    <a href="#">Export</a>
+                  </Col>
+                </Row>
               </Panel>
             </Col>
 

@@ -1,17 +1,17 @@
-class Dashboard extends React.Component {
+import React from 'react';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
+import ConferenceNavBar from '../../View/ConferenceNavBar/ConferenceNavBar';
+import ConferenceSideNav from '../../View/ConferenceSideNav/ConferenceSideNav';
+import AnalyticsContent from '../../View/AnalyticsContent/AnalyticsContent';
+
+export default class Dashboard extends React.Component {
 
   constructor(props){
     super(props);
   }
 
-  handleSelect(eventKey) {
-    event.preventDefault();
-  }
-
   render(){
-
-    let Row = ReactBootstrap.Row,
-      Col = ReactBootstrap.Col;
 
     return(
       <content>
@@ -20,7 +20,7 @@ class Dashboard extends React.Component {
           <Col sm={5} md={4} lg={3} xl={2}>
             <Row>
               <Col sm={12}>
-                <ConferenceSideNav />
+                <ConferenceSideNav/>
               </Col>
             </Row>
           </Col>
@@ -28,13 +28,13 @@ class Dashboard extends React.Component {
           <Col sm={7} md={8} lg={9} xl={10}>
             <Row>
               <Col sm={12}>
-                <ConferenceNavBar />
+                <ConferenceNavBar/>
               </Col>
             </Row>
 
             <Row>
               <Col sm={12}>
-                <AnalyticsContent />
+                <AnalyticsContent/>
               </Col>
             </Row>
 
@@ -47,5 +47,3 @@ class Dashboard extends React.Component {
   }
 
 }
-
-ReactDOM.render(<Dashboard/>, document.getElementById("conferenceReactApp"));

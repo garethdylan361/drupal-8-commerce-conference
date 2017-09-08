@@ -1,4 +1,8 @@
-class ConferenceNavBar extends React.Component {
+import React from 'react';
+import Nav from 'react-bootstrap/lib/Nav';
+import NavItem from 'react-bootstrap/lib/NavItem';
+
+export default class ConferenceNavBar extends React.Component {
 
   constructor(props){
     super(props);
@@ -10,9 +14,6 @@ class ConferenceNavBar extends React.Component {
   }
 
   render(){
-
-    let Nav = ReactBootstrap.Nav,
-      NavItem = ReactBootstrap.NavItem;
 
     return(
       <Nav bsStyle="tabs" activeKey="1" onSelect={this.handleSelect}>

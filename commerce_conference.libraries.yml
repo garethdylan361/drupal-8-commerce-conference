@@ -1,44 +1,14 @@
-react-js:
+babel-js:
   version: 1.x
   js:
-    'https://unpkg.com/react@15/dist/react.min.js': { type: external }
-    'https://unpkg.com/react-dom@15/dist/react-dom.min.js': { type: external }
     'https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js': { type: external }
-    'https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.31.3/react-bootstrap.min.js': { type: external }
 
-chart-js:
-  version: 1.x
-  js:
-    'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js': { type: external}
-    'https://cdnjs.cloudflare.com/ajax/libs/react-chartjs/0.8.0/react-chartjs.min.js': { type: external }
-
-dashboard:
+conferenceAppBundle:
   version: 1.x
   css:
     base:
       'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
   js:
-    'src/View/Dashboard/Dashboard.jsx': {attributes: {type: text/babel}}
+    'bundle.jsx': {attributes: {type: text/babel}}
   dependencies:
     - core/jquery
-    - commerce_conference/dashboard.navbar
-    - commerce_conference/dashboard.sidenav
-    - commerce_conference/dashboard.content.analytics
-
-dashboard.navbar:
-  version: 1.x
-  css:
-    theme:
-     'src/View/ConferenceNavBar/ConferenceNavBar.css': {}
-  js:
-    'src/View/ConferenceNavBar/ConferenceNavBar.jsx': {attributes: {type: text/babel}}
-
-dashboard.sidenav:
-  version: 1.x
-  js:
-    'src/View/ConferenceSideNav/ConferenceSideNav.jsx': {attributes: {type: text/babel}}
-
-dashboard.content.analytics:
-  version: 1.x
-  js:
-    'src/View/AnalyticsContent/AnalyticsContent.jsx': {attributes: {type: text/babel}}
