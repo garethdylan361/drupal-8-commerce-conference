@@ -18,7 +18,6 @@ class ConferenceDashboard extends ControllerBase {
       '#theme' => 'commerce_conference_dashboard',
       '#attached' => array(
         'library' => array(
-          'commerce_conference/babel-js',
           'commerce_conference/conferenceAppBundle',
         ),
       ),

@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: './src/app.jsx',
   output: {
-    filename: 'bundle.jsx'
+    filename: 'bundle.js'
   },
   resolve: {
     extensions: [".jsx", ".js"]
