@@ -16,9 +16,12 @@
 </ul>
 <p><strong>Technologies:</strong></p>
 <ul>
-<li>React.js</li>
+<li>React</li>
 <li>Chart.js</li>
-<li>Babel.js</li>
+<li>Babel</li>
+<li>Webpack</li>
+<li>Jest</li>
+<li>Drupal 8</li>
 </ul>
 
 
