@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ManageContent renders correctly 1`] = `
+<div
+  className="panel panel-default"
+  id={undefined}
+>
+  <div
+    className="panel-heading"
+  >
+    Header
+  </div>
+</div>
+`;

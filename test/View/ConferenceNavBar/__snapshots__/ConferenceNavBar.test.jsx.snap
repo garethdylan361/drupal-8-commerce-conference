@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConferenceNavBar should render 1`] = `
+<ul
+  className="nav nav-tabs"
+  role={null}
+>
+  <li
+    className="active"
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Analytics
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Manage
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Registration
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Name Tags
+    </a>
+  </li>
+</ul>
+`;

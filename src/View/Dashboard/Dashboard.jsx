@@ -1,9 +1,9 @@
 import React from 'react';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-import ConferenceNavBar from '../../View/ConferenceNavBar/ConferenceNavBar';
-import ConferenceSideNav from '../../View/ConferenceSideNav/ConferenceSideNav';
-import AnalyticsContent from '../../View/AnalyticsContent/AnalyticsContent';
+import ConferenceNavBar from '../ConferenceNavBar/ConferenceNavBar';
+import ConferenceSideNav from '../ConferenceSideNav/ConferenceSideNav';
+import AnalyticsContent from '../Content/AnalyticsContent/AnalyticsContent';
 
 export default class Dashboard extends React.Component {
 
@@ -34,7 +34,6 @@ export default class Dashboard extends React.Component {
 
             <Row>
               <Col sm={12}>
-                <AnalyticsContent/>
               </Col>
             </Row>
 

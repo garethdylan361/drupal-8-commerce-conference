@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConferenceSideNav renders correctly 1`] = `
+<ul
+  className="nav nav-pills nav-stacked"
+  role={null}
+>
+  <li
+    className="active"
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Conference 2017
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Conference 2016
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Conference 2015
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Conference 2014
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Conference 2013
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Conference 2012
+    </a>
+  </li>
+  <li
+    className=""
+    role="presentation"
+    style={undefined}
+  >
+    <a
+      href="#"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+    >
+      Conference 2011
+    </a>
+  </li>
+</ul>
+`;
